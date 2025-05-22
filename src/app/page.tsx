@@ -1,6 +1,6 @@
 export default function Home() {
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen px-8 bg-gray-100">
+    <div className="flex flex-col items-center justify-center min-h-screen px-8">
       <header className="mb-8">
         <h1 className="text-4xl font-bold text-center">Luke Stringer&apos;s Portfolio</h1>
       </header>
