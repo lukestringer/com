@@ -1,3 +1,6 @@
+# lukestringer.com portfolio website
+Visit [lukestringer.com](https://www.lukestringer.com) to see the result. This simple website says a bit about me and links (will link) to my other projects/ 
+
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
 ## Getting Started
