@@ -1,5 +1,7 @@
 'use client';
 
+import CursorChaserDog from "./components/CursorChaserDog";
+
 export default function Home() {
   return (
     <div className="flex flex-col items-center justify-center min-h-screen px-8">
@@ -9,6 +11,8 @@ export default function Home() {
         </h1>
       </header>
       <main className="max-w-xl text-lg leading-relaxed">
+        <CursorChaserDog diameter={20} />
+        <CursorChaserDog />
         <p className="mt-4">Welcome to my portfolio. 
         </p>
         <p>(It&apos;s under construction.)</p>
