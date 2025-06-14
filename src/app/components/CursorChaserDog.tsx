@@ -4,39 +4,37 @@ interface CursorChaserDogProps {
   diameter?: number;
 }
 
-function CursorChaserDog({diameter = 10} : CursorChaserDogProps): React.JSX.Element {
-  // When window is available, initialize position just outside screen.
-  const initialPosition = typeof window !== "undefined" 
-    ? { x: window.innerWidth / 2, y: window.innerHeight / 2 }
-    : { x: 0, y: 0 };
+function CursorChaserDog({ diameter = 50 }: CursorChaserDogProps): React.JSX.Element {
+  // Initialize at the center of the viewport if window is available.
+  const initialPosition = { x: 0, y: 0 };
 
-  const [dotPos, setDotPos] = React.useState<{ x: number; y: number }>(initialPosition);
+  const [dogPos, setDogPos] = React.useState<{ x: number; y: number }>(initialPosition);
   const [cursorPos, setCursorPos] = React.useState<{ x: number; y: number }>(initialPosition);
 
-  // Set up the mousemove listener only when the window is defined.
+  // Set up a mousemove listener to track the cursor.
   React.useEffect(() => {
     if (typeof window === "undefined") return;
-
+    
     const handleMouseMove = (e: MouseEvent) => {
       setCursorPos({ x: e.clientX, y: e.clientY });
     };
-
+    
     window.addEventListener("mousemove", handleMouseMove);
     return () => window.removeEventListener("mousemove", handleMouseMove);
   }, []);
 
-  // Animate the dot moving towards the cursor using requestAnimationFrame.
+  // Animate the dog's position towards the cursor.
   React.useEffect(() => {
     let animationFrameId: number;
-    const speed = 5; // pixels per frame
+    const speed = 5; // pixels per animation frame
 
     const updatePosition = () => {
-      setDotPos((currentPos) => {
+      setDogPos((currentPos) => {
         const dx = cursorPos.x - currentPos.x;
         const dy = cursorPos.y - currentPos.y;
         const distance = Math.sqrt(dx * dx + dy * dy);
 
-        // If the dot is close enough to the cursor, snap to its position.
+        // Snap to the cursor if close enough.
         if (distance < speed || distance === 0) {
           return { x: cursorPos.x, y: cursorPos.y };
         }
@@ -54,15 +52,15 @@ function CursorChaserDog({diameter = 10} : CursorChaserDogProps): React.JSX.Elem
   }, [cursorPos]);
 
   return (
-    <div
+    <img
+      src="/dog.jpg"
+      alt="Dog"
       style={{
         position: "absolute",
-        left: dotPos.x - 5, // shift to center the 10px dot
-        top: dotPos.y - 5,
+        left: dogPos.x - diameter / 2,
+        top: dogPos.y - diameter / 2,
         width: `${diameter}px`,
         height: `${diameter}px`,
-        borderRadius: "50%",
-        backgroundColor: "red",
       }}
     />
   );
