@@ -13,7 +13,7 @@ export default function Home() {
         Mention the app was the first one you made with Flutter and it was done quickly at uni. 
          */}
         <p className="mt-4">
-          I&apos;m learning React right now. I just got a bare-bones web app up and running! It's called{" "}
+          I&apos;m learning React right now. I just got a bare-bones web app up and running! It&apos;s called{" "}
           <a href="https://master.d3b5oaklt7daiy.amplifyapp.com/" className="text-blue-600 hover:underline">
             On Track - Simple Saver
           </a>
