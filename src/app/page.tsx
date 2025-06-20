@@ -13,12 +13,15 @@ export default function Home() {
         Mention the app was the first one you made with Flutter and it was done quickly at uni. 
          */}
         <p className="mt-4">
-          I&apos;m learning React right now. I am familiar with{" "}
-          <a
-            href="https://docs.flutter.dev/app-architecture/concepts"
-            className="text-blue-600 hover:underline"
-            target="_blank"
-          >
+          I&apos;m learning React right now. I just got a bare-bones web app up and running! It's called{" "}
+          <a href="https://master.d3b5oaklt7daiy.amplifyapp.com/" className="text-blue-600 hover:underline">
+            On Track - Simple Saver
+          </a>
+          .
+        </p>
+        <p className="mt-4">
+          I am familiar with{" "}
+          <a href="https://docs.flutter.dev/assets/images/docs/app-architecture/common-architecture-concepts/ui-f-state.png">
             UI as a function of state
           </a>
           , having used Flutter in my uni days to create cross-platform apps, including{" "}
