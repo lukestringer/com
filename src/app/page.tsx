@@ -17,10 +17,10 @@ export default function Home() {
           problem-solving and communication skills.
         </p>
         <p className="mb-2">
-          Now, I build my own web apps and I'm eager to blend my passions for software and user-centred design to drive
-          real results.
+          Now, I build my own web apps and I&apos;m eager to blend my passions for software and user-centred design to
+          drive real results.
         </p>
-        <p>Have a look at what I'm working on, below.</p>
+        <p>Have a look at what I&apos;m working on, below.</p>
       </section>
 
       {/* THEN / NOW */}
@@ -56,7 +56,7 @@ export default function Home() {
               <img src="/images/firebase.svg" alt="Logo" className="inline-block h-5 w-auto mr-1 align-middle" />
               Firebase
             </span>{" "}
-            backend working but didn't get it done before user testing had to begin.
+            backend working but didn&apos;t get it done before user testing had to begin.
           </p>
           <p className="mb-2">
             The exhibition poster PDF is{" "}
@@ -97,7 +97,7 @@ export default function Home() {
 
           <p className="mb-2 italic">
             {/* Now content */}
-            What I'm doing today…
+            What I&apos;m doing today…
           </p>
           <div className="m-6 flex justify-center">
             <img
@@ -108,12 +108,12 @@ export default function Home() {
             />
           </div>
           <p className="mb-2">
-            I've been learning{" "}
+            I&apos;ve been learning{" "}
             <span className="inline-block align-middle font-bold">
               <img src="/images/react.svg" alt="Logo" className="inline-block h-5 w-auto mr-1 align-middle" />
               React
             </span>{" "}
-            for a while and, recently, I've gotten a fullstack webapp up and running.
+            for a while and, recently, I&apos;ve gotten a fullstack webapp up and running.
           </p>
           <p className="mb-2">
             On Track Simple Saver sets and tracks progress of a savings goal. Budgeting is a struggle for many people,
