@@ -47,19 +47,16 @@ export default function Home() {
           </p>
           <p className="mb-2">
             Is Now Good gives users control over the notifications their messages trigger. Many conflicting user needs
-            were considered, like maintaining context privacy but sharing easily.
+            were considered, like maintaining context privacy but still sharing easily.
           </p>
           <p className="mb-2">
-            I learnt a lot about developing Flutter apps, and UI as a function of state in general (which has remained
-            useful in React development). I also tried to get a{" "}
+            I learnt a lot about developing Flutter apps, and UI as a function of state (useful in React as well). I
+            also tried to get a{" "}
             <span className="inline-block align-middle font-bold">
               <img src="/images/firebase.svg" alt="Logo" className="inline-block h-5 w-auto mr-1 align-middle" />
               Firebase
             </span>{" "}
-            backend working but didn&apos;t get it done before user testing had to begin.
-          </p>
-          <p className="mb-2">
-            The exhibition poster PDF is{" "}
+            backend working but didn&apos;t get it done before user testing had to begin. The exhibition poster PDF is{" "}
             <a
               className="text-blue-600 hover:underline"
               target="_blank"
@@ -79,7 +76,7 @@ export default function Home() {
           </p>
           <div className="flex justify-center m-5">
             <p>
-              Have a look at the app here:{" "}
+              Have a look here:{" "}
               <a
                 className="text-blue-600 hover:text-blue-800 hover:bg-cyan-100 font-bold hover:border-2 hover:border-blue-600 border-2 border-cyan-200 bg-cyan-200 p-2 rounded-lg"
                 href="https://lukejoshuastringer.github.io/"
@@ -127,7 +124,8 @@ export default function Home() {
               <img src="/images/aws.svg" alt="Logo" className="inline-block h-5 w-auto mr-1 align-middle" />
               AWS
             </span>{" "}
-            was a big milestone for me in my web development journey.
+            was a big milestone for me in my web development journey. I&apos;m excited to coninue developing my ideas
+            into software.
           </p>
           <div className="flex justify-center m-5">
             <p>
@@ -145,12 +143,21 @@ export default function Home() {
       </section>
 
       {/* CONTACT ME */}
-      {/* <footer className="bg-yellow-50 py-8 px-4 md:px-[5%]">
+      <footer className="bg-yellow-50 py-8 px-4 md:px-[5%]">
         <h2 className="text-3xl font-semibold mb-4">Contact Me</h2>
+        <p>Thanks for checking out my work!</p>
         <p>
-          TODO: Contact form here.
+          If you&apos;d like to get in touch,{" "}
+          <a className="text-blue-600 hover:underline" href="mailto:luke97stringer@gmail.com">
+            send me an email here
+          </a>{" "}
+          or message me on{" "}
+          <a className="text-blue-600 hover:underline" href="https://linkedin.com/in/lukestringer/">
+            LinkedIn
+          </a>
+          .
         </p>
-      </footer> */}
+      </footer>
     </div>
   );
 }
